@@ -18,7 +18,9 @@ import { Autoplay, Pagination } from 'swiper';
 const TestiSlider = () => {
 
   return (
-    <>
+    <div data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="2000">
       <Swiper
         pagination={{
           clickable: true,
@@ -58,7 +60,7 @@ const TestiSlider = () => {
           );
         })}
       </Swiper>
-    </>
+    </div>
   );
 };
 

@@ -1,32 +1,20 @@
-import React from 'react';
-
-// import components
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Brands from './components/Brands';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Skills from './components/Skills';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Testimonials from './components/Testimonials';
-import BackTopBtn from './components/BackTopBtn';
+import React, { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Home from "./components/Home/Home";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+
   return (
-    <div className='bg-white relative'>
-      <Header />
-      <Hero />
-      <Brands />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Services />
-      <Testimonials />
-      <Contact />
-      <Footer />
-      <BackTopBtn />
+    <div className="bg-white">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 };

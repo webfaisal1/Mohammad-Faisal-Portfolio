@@ -10,6 +10,9 @@ import {
   FiTag,
   FiMail,
   FiMapPin,
+  FiPhone,
+  FiLinkedin,
+  FiFacebook,
 } from 'react-icons/fi';
 
 // companies icons
@@ -20,12 +23,12 @@ import BehanceBrandIcon from './assets/img/brands/behance.png';
 import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
 
 // projects images
-import Project1 from './assets/img/projects/p1.webp';
-import Project2 from './assets/img/projects/p2.webp';
-import Project3 from './assets/img/projects/p3.webp';
-import Project4 from './assets/img/projects/p4.webp';
-import Project5 from './assets/img/projects/p5.webp';
-import Project6 from './assets/img/projects/p6.webp';
+import Project1 from './assets/img/projects/project1.png';
+import Project2 from './assets/img/projects/project2.png';
+import Project3 from './assets/img/projects/project3.png';
+import Project4 from './assets/img/projects/project4.png';
+import Project5 from './assets/img/projects/project5.png';
+import Project6 from './assets/img/projects/project6.png';
 
 // skills images
 import SkillImg1 from './assets/img/skills/html5.png';
@@ -65,6 +68,10 @@ export const navigation = [
     href: 'testimonials',
   },
   {
+    name: 'blog',
+    href: 'blog',
+  },
+  {
     name: 'contact',
     href: 'contact',
   },
@@ -73,20 +80,20 @@ export const navigation = [
 // social
 export const social = [
   {
-    icon: <FiYoutube />,
-    href: '',
-  },
-  {
-    icon: <FiInstagram />,
-    href: '',
+    icon: <FiLinkedin />,
+    href: 'https://www.linkedin.com/in/developer-mohammad-faisal/',
   },
   {
     icon: <FiGithub />,
-    href: '',
+    href: 'https://github.com/developer-mohammad-faisal',
   },
   {
-    icon: <FiDribbble />,
-    href: '',
+    icon: <FiFacebook />,
+    href: 'https://www.facebook.com/profile.php?id=100079882159420',
+  },
+  {
+    icon: <FiInstagram />,
+    href: 'https://www.instagram.com/faisal85412/',
   },
 ];
 
@@ -117,40 +124,53 @@ export const brands = [
 // projects
 export const projectsData = [
   {
-    id: '1',
-    image: Project1,
-    name: 'project name 1',
-    category: 'UI/UX design',
-  },
-  {
-    id: '2',
-    image: Project2,
-    name: 'project name 2',
-    category: 'web development',
-  },
-  {
-    id: '3',
-    image: Project3,
-    name: 'project name 3',
-    category: 'UI/UX design',
-  },
-  {
-    id: '4',
+    _id: '1',
     image: Project4,
-    name: 'project name 4',
-    category: 'branding',
+    name: 'Windsor Car Warehouse',
+    category: 'Full Stack',
+    liveSite: 'https://windsor-car-warehouse.web.app/',
+    codeLink: 'https://github.com/developer-mohammad-faisal/Windsor-car-warehouse-client'
   },
   {
-    id: '5',
+    _id: '2',
+    image: Project1,
+    name: 'Book Review',
+    category: 'Front End',
+    liveSite: 'https://book-bazaar.netlify.app/home',
+    codeLink: 'https://github.com/developer-mohammad-faisal/Book-Reviews-'
+  },
+  {
+    _id: '3',
+    image: Project2,
+    name: 'Dr. William F Turner',
+    category: 'Back End',
+    liveSite: 'https://dr-william-f-turner.web.app/',
+    codeLink: 'https://github.com/developer-mohammad-faisal/Dr.-William-F-Turner-'
+  },
+  {
+    _id: '4',
+    image: Project3,
+    name: 'Laptop Bazaar',
+    category: 'Front End',
+    liveSite: 'https://laptop-bazaar.netlify.app/',
+    codeLink: 'https://github.com/developer-mohammad-faisal/Laptop-Bazaar'
+  },
+
+  {
+    _id: '5',
     image: Project5,
-    name: 'project name 5',
-    category: 'web development',
+    name: 'HTML CSS Project',
+    category: 'Back End',
+    liveSite: 'https://my-second-websites.netlify.app/',
+    codeLink: 'https://github.com/developer-mohammad-faisal/My-Second-Websites'
   },
   {
-    id: '6',
+    _id: '6',
     image: Project6,
-    name: 'project name 6',
-    category: 'web development',
+    name: 'One Page Ecommerce Panda',
+    category: 'Back End',
+    liveSite: 'https://ecomrace-practice.netlify.app/',
+    codeLink: 'https://github.com/developer-mohammad-faisal/practice-panda'
   },
 ];
 
@@ -160,13 +180,13 @@ export const projectsNav = [
     name: 'all',
   },
   {
-    name: 'UI/UX Design',
+    name: 'Front End',
   },
   {
-    name: 'web development',
+    name: 'Back End',
   },
   {
-    name: 'branding',
+    name: 'Full Stack',
   },
 ];
 
@@ -202,27 +222,27 @@ export const skills = [
 export const services = [
   {
     icon: <FiLayout />,
-    name: 'Web Design',
+    name: 'JavaScript',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'I have 1 year experience in JavaScript. I can do any of your projects with JavaScript. Feel free to give me any project.',
   },
   {
     icon: <FiSettings />,
-    name: 'Web Development',
+    name: 'TypeScript',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'I have one year experience about TypeScript. I can do any project with typescript. You can give me any project',
   },
   {
     icon: <FiPenTool />,
-    name: 'Branding',
+    name: 'React Js',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'I have 1-year of experience about React Js, I can do any project with react js. You can give me any project',
   },
   {
     icon: <FiTag />,
-    name: 'SEO',
+    name: 'MERN Stack',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'I have a good amount of ideas and experience about express.js react node.js with MERN Stack. You can give me any project of Meron Stack',
   },
 ];
 
@@ -257,12 +277,18 @@ export const contact = [
     icon: <FiMail />,
     title: 'Have a question?',
     subtitle: 'I am here to help you.',
-    description: 'Email me at hello@youremail.com',
+    description: 'Email me at web.mohammad.faisal@gmail.com',
+  },
+  {
+    icon: <FiPhone />,
+    title: 'Phone Number',
+    subtitle: '24 Hour Open',
+    description: '+8801619-816171',
   },
   {
     icon: <FiMapPin />,
     title: 'Current Location',
-    subtitle: 'Bucharest, Romania',
+    subtitle: 'Chittagong, Bangladesh',
     description: 'Serving clients worldwide',
   },
 ];

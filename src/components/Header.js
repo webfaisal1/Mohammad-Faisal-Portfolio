@@ -23,8 +23,9 @@ const Header = () => {
     >
       <div className='container mx-auto h-full flex items-center justify-between'>
         {/* logo */}
-        <a href='#'>
-          <img src={Logo} alt='' />
+        <a className='text-3xl text-amber-400' href='/#'>
+          {/* <img src={Logo} alt='' /> */}
+          Mohammad Faisal
         </a>
         {/* nav */}
         <div className='hidden lg:block'>
