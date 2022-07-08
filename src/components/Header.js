@@ -23,7 +23,6 @@ const Header = () => {
       <div className='container mx-auto h-full flex items-center justify-between'>
         {/* logo */}
         <a className='text-3xl text-amber-400' href='/#'>
-          {/* <img src={Logo} alt='' /> */}
           Mohammad Faisal
         </a>
         {/* nav */}
